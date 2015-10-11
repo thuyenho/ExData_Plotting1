@@ -14,7 +14,7 @@ png(filename = "plot4.png", width = 480, height = 480)
 
 par(mfrow=c(2,2))
 
-with(data, plot(Time, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)"))
+with(data, plot(Time, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power"))
 with(data, plot(Time, Voltage, type ="l", xlab = "datetime"))
 with(data, {
     plot(Time, Sub_metering_1, 
@@ -35,7 +35,7 @@ with(data, {
           col = "blue")
     
     legend("topright", 
-           pch = "_",
+           lwd = 1,
            col = c("black", "red", "blue"), 
            legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     

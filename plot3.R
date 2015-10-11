@@ -30,14 +30,12 @@ with(data, {
           xlab = "", 
           col = "blue")
     
+    legend("topright", 
+           lwd = 1,
+           col = c("black", "red", "blue"), 
+           legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+    
     }
 )
 
-legend("topright", 
-       pch = "_",
-       col = c("black", "red", "blue"), 
-       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
-
-
-    
 dev.off()
